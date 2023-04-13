@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicles",
+  "info": {
+    "singularName": "vehicle",
+    "pluralName": "vehicles",
+    "displayName": "Vehicles",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carId": {
+      "type": "uid"
+    },
+    "inStock": {
+      "type": "boolean"
+    },
+    "enginePower": {
+      "type": "biginteger"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "colorName": {
+      "type": "string"
+    },
+    "colorHex": {
+      "type": "string",
+      "regex": "^\\s*(color|background[-color]*||[a-zA-Z0-9-_]+)??[\\s:=]*[\\s]*(?:(\\b(rgb)\\s*?\\(\\s*?(000|0?\\d{1,2}|1\\d\\d|2[0-4]\\d|25[0-5])\\s*?,\\s*?(000|0?\\d{1,2}|1\\d\\d|2[0-4]\\d|25[0-5])\\s*?,\\s*?(000|0?\\d{1,2}|1\\d\\d|2[0-4]\\d|25[0-5])\\s*?\\))|(\\b(rgba)\\s*?\\(\\s*?(000|0?\\d{1,2}|1\\d\\d|2[0-4]\\d|25[0-5])\\s*?,\\s*?(000|0?\\d{1,2}|1\\d\\d|2[0-4]\\d|25[0-5])\\s*?,\\s*?(000|0?\\d{1,2}|1\\d\\d|2[0-4]\\d|25[0-5])\\s*?,\\s*?(0|0\\.\\d*|1|1.0*)\\s*?\\))\\B|(\\b(transparent)|(inherit)|(initial)|(currentColor)|(var)[(]([-]{2}[^)]+)[)])|(#([a-fA-F0-9]){3,4})|(#([a-fA-F0-9]){6,8})|(\\b(hsl)\\s*?\\(\\s*?(000|0?\\d{1,2}|[1-2]\\d\\d|3[0-5]\\d|360)\\s*?,\\s*?(000|100|0?\\d{2}|0?0?\\d)%\\s*?,\\s*?(000|100|0?\\d{2}|0?0?\\d)%\\s*?\\)$)|(\\b(hsla)\\s*?\\(\\s*?(000|0?\\d{1,2}|[1-2]\\d\\d|3[0-5]\\d|360)\\s*?,\\s*?(000|100|0?\\d{2}|0?0?\\d)%\\s*?,\\s*?(000|100|0?\\d{2}|0?0?\\d)%\\s*?,\\s*?(0|0\\.\\d*|1|1.0*)\\s*?\\)\\b))",
+      "default": "#000000"
+    }
+  }
+}
